@@ -1,0 +1,25 @@
+.div1{
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+}
+
+.div2{
+    background-color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* left: 50px; */
+    top: 50px;
+
+}
+
+.div3{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+}
+
+.outer-div{
+    position: relative;
+}

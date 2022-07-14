@@ -68,9 +68,44 @@ body, html{
 }
 
 
+#about{
+    width: auto;
+    height: 100%;
+    /* position: relative; */
+}
+
+/* why not directly set image dimension as such */
+#my-image{
+    height: 16rem;
+    width: 16rem;
+    margin: auto;
+    margin-top: -10vh;
+    position: relative;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /* border: 3px solid lightgrey; */
+    box-shadow: 0 0 5px 4px lightgray;
+    /* position: relative; */
+}
+
+#my-description{
+    height: auto;
+    width: 50vw;
+    margin: auto;
+    padding:  40px 0 0 0;
+}
 
 
+#my-description p{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.2rem;
 
+}
 
 
 
