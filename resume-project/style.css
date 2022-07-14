@@ -1,0 +1,81 @@
+
+body, html{
+    margin: 0px !important; 
+}
+
+#body-header{
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+    background-attachment: fixed;
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    /* ul has default margin removing that */
+    margin: 0;
+
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 0px 8px;
+    
+}
+
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+ 
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.social-container{
+    margin-top: 20vh;
+}
+
+#name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.social-icons li a i{
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0 0 6px 4px rgba(230, 196, 190, 0.2 );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
