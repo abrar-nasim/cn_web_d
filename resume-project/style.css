@@ -1,6 +1,17 @@
+:root{
+    font-size: 16px;
+}
+
+html{
+    font-family: Geneva, Tahoma, sans-serif;
+}
 
 body, html{
-    margin: 0px !important; 
+    margin: 0px; 
+}
+
+.padding-top{
+    padding-top: 8px;
 }
 
 #body-header{
@@ -10,6 +21,23 @@ body, html{
     opacity: 0.8;
     background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
     background-attachment: fixed;
+}
+
+/* --------- GENERAL SECTION STYLING -----------*/
+
+section{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+section:nth-child(2n){
+    background-color: lightgray;
 }
 
 .horizontal-list{
@@ -76,8 +104,8 @@ body, html{
 
 /* why not directly set image dimension as such */
 #my-image{
-    height: 16rem;
-    width: 16rem;
+    height: 14rem;
+    width: 15rem;
     margin: auto;
     margin-top: -10vh;
     position: relative;
@@ -96,7 +124,7 @@ body, html{
     height: auto;
     width: 50vw;
     margin: auto;
-    padding:  40px 0 0 0;
+    padding:  25px 0 0 0;
 }
 
 
@@ -108,9 +136,108 @@ body, html{
 }
 
 
+/*---------- SKILLS PART STYLING ----------*/
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.skills-display{
+    width: 70%;
+    /* border: 1px solid red;
+    height: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 35px 0 35px 0;
+}
+
+.skill-progress{
+    width: 10rem;
+    height: 1.9rem;
+    background-color: grey;
+    border-radius: 2rem;
+}
+
+.skill-name span{
+    color: white;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.skill-progress>div{
+    border-radius:2rem 0 0 2rem  ;
+    box-shadow:  4px 0 4px lightgray;
+}
+
+
+/* -------- PORTFOLIO SECTION STYLE -------- */
+.portfolio-display{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-image{
+    width: 300px;
+    height: 250px;
+}
+.portfolio-image .image{
+    width: inherit;
+    height: inherit;
+}
+
+.portfolio-image img{
+    width: inherit;
+    height: inherit;
+}
+
+
+/* --------- Contact section style --------- */
+#Contact-us{
+    background-image: linear-gradient(90deg,pink, green);
+    display: flex;
+}
+
+.contact-form{
+    
+}
 
 
 
 
 
+/* PERCENTAGE CLASS */
+.eighty-five-percent{
+    width: 85%;
+    height: inherit; 
+}
 
+.mb-blue{
+    background-color: blue;
+}
+
+.mb-orange{
+    background-color: orange;
+}
+.mb-red{
+    background-color: red;
+}
+.mb-green{
+    background-color: green;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
