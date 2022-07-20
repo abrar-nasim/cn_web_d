@@ -205,16 +205,72 @@ section:nth-child(2n){
 
 
 /* --------- Contact section style --------- */
-#Contact-us{
-    background-image: linear-gradient(90deg,pink, green);
+#contact{
+    background-image: linear-gradient(45deg, hsl(218deg 61% 40%), hsl(259deg 36% 29%));
     display: flex;
+    width: 100;
+}
+
+#contact span{
+    color: white;
+}
+.contact-address{
+    width: 100%;
 }
 
 .contact-form{
+    width: 35%;
+    margin: 5%;
     
 }
 
+.contact-form form{
+    width: 100%;
+}
 
+
+.contact-form input[type="text"]{
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    height: 45px;
+
+}
+
+.contact-form button[type="submit"] {
+    display: block;
+    margin: auto;
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    margin-top: 40px;
+}
+
+.contact-form button[type="submit"]:hover{
+    cursor: pointer;
+}
+
+::placeholder{
+    color: lemonchiffon;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
+
+#message{
+    padding: 20px 0;
+}
 
 
 
