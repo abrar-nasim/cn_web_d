@@ -154,8 +154,7 @@ section:nth-child(2n){
 
 .skills-display{
     width: 70%;
-    /* border: 1px solid red;
-    height: 100px; */
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -164,7 +163,7 @@ section:nth-child(2n){
 
 .skill-progress{
     width: 10rem;
-    height: 1.9rem;
+    height: 1.4rem;
     background-color: grey;
     border-radius: 2rem;
 }
@@ -176,8 +175,15 @@ section:nth-child(2n){
 }
 
 .skill-progress>div{
-    border-radius:2rem 0 0 2rem  ;
-    box-shadow:  4px 0 4px lightgray;
+    border-radius:2rem 0 0 2rem  ; 
+    box-shadow:  4px 0 4px lightblue;
+}
+
+.skill-progress{
+    width: 10rem;
+    height: 1.4rem;
+    background-color: lavender;
+    border-radius: 0.8rem;
 }
 
 
@@ -205,6 +211,7 @@ section:nth-child(2n){
 
 
 /* --------- Contact section style --------- */
+
 #contact{
     background-image: linear-gradient(45deg, hsl(218deg 61% 40%), hsl(259deg 36% 29%));
     display: flex;
@@ -216,12 +223,34 @@ section:nth-child(2n){
 }
 .contact-address{
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .contact-form{
     width: 35%;
-    margin: 5%;
+    margin:19.920px 0 ;
     
+}
+
+.form-address{
+    width: 35%;
+    color: white;
+    
+}
+
+.form-address p{
+    font-size: 0.9rem;
+}
+
+.form-address span{
+    margin-right: 2px;
+   
+}
+
+.form-address p, .form-address div{
+    color: lightgray;
+    margin: 8px;
 }
 
 .contact-form form{
@@ -296,4 +325,8 @@ section:nth-child(2n){
 
 .mb75px{
     margin-bottom: 75px;
+}
+
+.pb50px{
+    padding-bottom: 50px;
 }
