@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 95vh;   
+    /* for making separately scrollable */
+    background-color: lightsteelblue;
+    color: white;
+}
+
+#container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #314054;
+    height: 100%; 
+    /* for making separately scro;;ab;e */
+}
+
+#main-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav-elements{
+    display: flex;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-nav-elements{
+    display: flex;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+
+}
+
+#main-nav img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+#main-nav>div>div{
+    padding-top: 19px;
+}
+
+.header-form button, .header-form input{
+    border: none;
+    background:none;
+    
+}
+
+.header-form{
+    background-color: aliceblue;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: -3px;
+}
+
+
+ /* Main part   */
+
+ #inner-container{
+    width: 100%;
+    display: flex;
+    height: 85%;
+
+ }
+
+
+
+#main{
+    /* display: inline-block; */
+    width: 76%;
+    height: 100%;  
+    /* for making separately scrollable */
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-left: 4%;
+    overflow-y: scroll; 
+    /* for making separately scrollable */
+    
+}
+
+.big-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-cards > div{
+    margin: 5px;
+}
+
+.big-cards > div > img {
+    width: 190px;
+    max-height: 190px;
+    
+}
+
+
+
+
+
+
+/* Latest release style  */
+
+#latest-release{
+    border: 1px solid white;
+    margin-left: 4px;
+    margin-top: 3%;
+}
+
+#latest-release-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1%;
+    
+}
+
+.latest-release-card{
+    display: flex;
+    width: 37%;
+    justify-content: space-between;
+    border: 1px solid white;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.latest-release-card .left-items{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.latest-release-card .left-items img{
+    width: 50px;
+    height: 50px;
+}
+
+.latest-release-card .right-items i{
+    padding-left: 7px;
+}
+
+
+
+/* popular artist section  */
+
+#popular-artist{
+    border: 1px solid white;
+    margin-left: 4px;
+    margin-top: 3%;
+}
+
+#popular-artist-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1%;
+    margin-top: 20px;
+}
+
+.popular-artist-card{
+    margin: 0 5px;
+}
+
+.popular-artist-card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.popular-artist-card p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/* Category Section  */
+
+#category-box1{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    margin: 4px;
+    padding: 1%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(128, 175, 217);
+
+}
+
+#category-box1 img{
+    height: 70px;
+    width: 70px;
+}
+
+.category-box1-card{
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/10/13/18/guitar-839168__480.jpg");
+    height: 60px;
+    width: 60px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.category-box1-card{
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Category box 2  */
+#category-box2{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    margin-left: 4px;
+    margin-top: 3%;
+    justify-content: space-around;
+
+
+}
+
+.category-box2-card{
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/10/13/18/guitar-839168__480.jpg");
+    height: 80px;
+    width: 190px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* lastest section styling  */
+
+#latest-section{
+    border: 1px solid white;
+    margin-left: 4px;
+    margin-top: 3%;
+}
+
+#latest-section-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.latest-section-card{
+    margin: 6px;
+}
+
+.latest-section-card img{
+    height: 70px;
+    width: 70px;
+}
+
+.latest-section-card p{
+    font-size: 0.8rem;
+}
+
+
+/* Sidebar styling */
+
+
+
+#sidebar{
+    display: inline-block;
+    width: 18%;
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-left: 1%;
+    overflow-y: scroll;
+    height: 100%;
+    
+}
+
+.queue-card{
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queue-card>div{
+    display: flex;
+    align-items: center;
+}
+
+.queue-card img{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.queue-card span,.queue-card  p,.queue-card  img{
+    margin: 4px    
+
+}
+
+
+
+/* Miscellaneous */
+
+
+.small-text{
+    font-size: 0.8rem;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.margin-5px {
+    margin: 5px;
+}
