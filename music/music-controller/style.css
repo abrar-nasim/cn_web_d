@@ -6,16 +6,17 @@
 
 #music-controller{
     height: 5%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 /* music controller left  */
 
 #music-controller .left{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
+    flex: 1 1 auto;
     width: 23%;
     gap: 1%;   
 }
@@ -42,28 +43,106 @@
 /* music controller center  */
 
 #music-controller .center{
-    border: 1px solid red;
-    width: 35%;
+    /* border: 1px solid red; */
+    width: 34%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    flex: 1 1 auto;
     
 }
 
 #music-controller .center .center-top-control{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
     gap: 10px;
     
 }
 
+.control-progress-bar{
+    display: flex;
+    justify-content: center;
+}
 
+.control-progress-bar .progress-bar{
+    width: 60%;
+    height: 1px;
+    background-color: red;
+    /* border: 1px solid red; */
+    border-radius: 5%;
+}
+
+
+
+/* .control-progress-bar .progress-bar::before{
+    content: '';
+    width: 10.2%;
+    height: 0;
+    border-radius: 5px;
+    border: 3px solid rgb(247, 9, 9);
+    position: absolute;
+    margin-left: -5px;
+    top: 5.61%;
+} */
+
+.progress-bar-complete{
+    width: 43%;
+    height: 5px;
+    background-color: red;
+    z-index: 55;
+    border-radius: 5px;
+    margin-left: -1.5px;
+    margin-top: -0.5px;
+}
+
+.control-progress-bar .progress-bar .progress-bar-complete::after{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    margin-top: -4.2px;
+    margin-left: 10%;
+}
 
 /* music controller right  */
 
 #music-controller .right{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 23%;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    
+}
 
+.control-progress-bar-right {
+    width: 35%;
+    height: 2px;
+    background-color: red;
+}
+
+.control-progress-bar-right .progress-bar-complete-right{
+    width: 40%;
+    height: 5px;
+    background-color: red;
+    margin-top: -1.5px;
+    border-radius: 5px;
+
+}
+
+.control-progress-bar-right .progress-bar-complete-right::after{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    margin-left: 3.6%;
+    margin-top: -3.4px;
+   
 }
