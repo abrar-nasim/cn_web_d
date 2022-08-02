@@ -74,12 +74,17 @@ body{
     border: 1px solid white;
     margin-top: 5%;
     margin-left: 4%;
+    height: 50vh;
     
 }
 
 .big-cards{
     display: flex;
     flex-wrap: wrap;
+    height: 50vh;
+    width: 76%;
+
+
 }
 
 .big-cards > div{

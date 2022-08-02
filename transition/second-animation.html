@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        @keyframes change-shape {
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(-100px);
+            }
+
+            50%{
+                transform: translateY(-50px);
+            }
+
+           
+        }
+
+        div{
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            animation: change-shape 3s ease-in-out 8 alternate;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>

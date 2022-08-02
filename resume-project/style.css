@@ -135,9 +135,6 @@ section:nth-child(2n){
 
 }
 
-
-/*---------- SKILLS PART STYLING ----------*/
-
 .section-heading {
     width: auto;
     padding: 20px 10px 10px;
@@ -151,40 +148,45 @@ section:nth-child(2n){
     padding-top: 10px;
     margin-right: 0.5rem;
 }
+/*---------- SKILLS PART STYLING ----------*/
+
+
 
 .skills-display{
     width: 70%;
-   
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 35px 0 35px 0;
+    justify-content: space-evenly;
+    
+    margin-bottom: 35px;
 }
 
 .skill-progress{
     width: 10rem;
-    height: 1.4rem;
+    height: 2.2rem;
     background-color: grey;
     border-radius: 2rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+
 }
 
 .skill-name span{
     color: white;
     margin-left: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    vertical-align: middle;
 }
 
 .skill-progress>div{
     border-radius:2rem 0 0 2rem  ; 
-    box-shadow:  4px 0 4px lightblue;
+    box-shadow:  4px 1px 4px lightblue;
+    padding-top: 5px;
 }
 
-.skill-progress{
-    width: 10rem;
-    height: 1.4rem;
-    background-color: lavender;
-    border-radius: 0.8rem;
-}
+
 
 
 /* -------- PORTFOLIO SECTION STYLE -------- */
@@ -329,4 +331,106 @@ section:nth-child(2n){
 
 .pb50px{
     padding-bottom: 50px;
+}
+
+.red{
+    color: red;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+
+/* ----------- experince section style --------- */
+
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: 2px solid black; */
+    
+}
+
+.timeline-box{
+    position: relative;
+    width: 40%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    margin: 5px;
+    left: 5%;
+    padding: 10px;
+}
+
+.timeline-box:nth-child(2n+1):after{
+    content: '';
+    position: absolute;
+    top: 38.8%;
+    border-radius: 50%;
+    right: -8%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n):after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+    left: -8.6%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.icon-and-d{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-and-d p {
+    margin: 1px 0;
+}
+
+.icon-and-d h2 {
+    margin: 7px 0;
+    color: #2857a4;
+}
+
+.icon img{
+    max-width: 50px;
+    max-height: 50px;
+    margin: 5px 0;
+    
+}
+
+.timeline-divider{
+    position:absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 20%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.timeline-traveller i{
+    font-size: 2rem;
 }
