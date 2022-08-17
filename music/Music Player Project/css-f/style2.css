@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;   
+    /* for making separately scrollable */
+    background-color: lightsteelblue;
+    color: white;
+}
+
+#container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #203b61;
+    height: 100%; 
+    /* for making separately scro;;ab;e */
+}
+
+#main-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav-elements{
+    display: flex;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-nav-elements{
+    display: flex;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+#main-nav img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* .padding-top-19px{
+    padding-top: 19px;
+} */
+
+.header-form button, .header-form input{
+    border: none;
+    background:none;
+    
+}
+
+.header-form{
+    background-color: aliceblue;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: -3px;
+}
+
+/* making menu hamburger  */
+
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.hamburger::before{
+    top: -10px;
+    width: 20px;
+}
+
+.hamburger::after{
+    top: 10px;
+    width: 25px;
+}
+
+
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger, .toggle-menu{
+    display: none;
+}
+
+
+.right-nav-elements input:checked ~ .hamburger{
+    background: transparent;
+}
+.right-nav-elements input:checked ~ .hamburger::before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.right-nav-elements input:checked ~ .hamburger::after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.right-nav-elements input:checked ~ .menu{
+    visibility: visible;
+}
+
+@media screen and (max-width:992px) {
+    .hamburger,
+    .toggle-menu{
+        display: block;
+    }
+
+    .menu{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        top: 80px;
+        visibility: hidden;
+        right: 0;
+        height: 300px;
+        width: 160px;
+        background-color: #203b61;
+        z-index: 11;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .right-nav-elements{
+        width: 5%;
+    }
+
+   
+}
+
+
+
+
+ /* Main part   */
+
+ #inner-container{
+    width: 100%;
+    display: flex;
+    height: 73%;
+
+ }
+
+
+
+#main{
+    /* display: inline-block; */
+    width: 72%;
+    height: 100%;  
+    /* for making separately scrollable */
+    /* border: 1px solid white; */
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    overflow-y: scroll; 
+    /* for making separately scrollable */
+    
+}
+
+
+/* ------------ Hero Section Styling------------ */
+
+
+#hero{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0e387a;
+    /* flex:  1 1 auto; */
+    width: 100%;
+    height: auto;
+    
+}
+
+#hero-left{
+    width: 37%;
+    margin-right: 15px;
+    flex: 1 1 auto;
+}
+
+#hero-right{
+    width: 58%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-left img{
+    width: 300px;
+
+}
+
+#hero-right-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.padding-10px{
+    padding: 10px;
+}
+#hero-right-top-left h2{
+    padding-bottom: 2px;
+}
+
+#hero-right-bottom{
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+#hero-right-bottom button{
+    padding: 5px 33px;
+    margin-bottom: 8px;
+    background: linear-gradient(60deg,rgb(69, 69, 232) 0%,violet 70%);
+}
+
+#hero-right-bottom div p{
+    padding-top:4px ;
+}
+
+#hero-right-bottom h3{
+    padding-top: 2px;
+}
+
+.color-grey{
+    color: grey;
+}
+
+/* Latest release style  */
+
+#latest-release{
+    /* border: 1px solid white; */
+    /* margin-left: 10px; */
+    margin-top: 3%;
+    height: 40%;
+    overflow-y: scroll;
+
+
+}
+.latest-release-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+}
+
+.latest-release-card{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: 100%;
+    gap: 4%;
+    /* border: 1px solid wheat; */
+    margin-right: 2.4%;
+    position: relative;
+}
+
+.latest-release-card img{
+    width: 55px;
+}
+
+.latest-release-inner-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid wheat; */
+
+}
+
+.inner-card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inner-card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inner-card-right i{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option-card{
+    display: none;
+    width: 120px;
+    height: 92px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 0.01%;
+    top: 20%;
+    box-shadow: 3px 3px rgb(247, 243, 243) inset ;
+    padding-top: 3px;
+    
+    /* display: none; */
+}
+
+.hover-option-card{
+    cursor: pointer;
+}
+
+.hover-option-card:hover  .option-card{
+    display: block;
+}
+
+.option-card ul{
+    margin: 0;
+    padding: 4.5px 0px 4px 8px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.option-card ul li{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+
+/* Category Section  */
+
+
+/* lastest section styling  */
+
+
+/* Sidebar styling */
+
+
+
+#sidebar{
+    display: inline-block;
+    width: 25%;
+    /* border: 1px solid white; */
+    margin-top: 5%;
+    margin-left: 1%;
+    overflow-y: scroll;
+    height: 99.5%;
+    padding: 0 15px;
+    
+}
+
+.queue-card{
+    height: 50px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queue-card>div{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.queue-card img{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.queue-card span,.queue-card  p,.queue-card  img{
+    margin: 4px    
+
+}
+
+
+@media screen and (max-width:992px) {
+    #sidebar{
+        display: none;
+    }
+
+    #main{
+        width: 95%;
+    }
+}
+
+.queue-dropdown{
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.queue-dropdown-card{
+    position: absolute;
+    left: -100%;
+    top: 90%;
+    background-color: #fff;
+    color: black;
+    width: 130px;
+    height: 63px;
+    padding: 5px;
+    padding-left: 8px;
+    font-size: 0.8rem;
+    padding-right: 8px;
+    display: none;
+}
+.queue-dropdown-card p{
+    padding: 4px;
+    border-bottom: 1px solid lightgray;
+    width: 85%;
+}
+
+.flex.queue-dropdown:hover{
+    color: aquamarine;
+}
+
+.flex.queue-dropdown:hover .queue-dropdown-card{
+    display: block;
+} 
+
+/* ---------------------MUSIC CONTROLLER-------------------------- */
+
+
+
+#music-controller{
+    height: 9%;
+    width: 100%;
+
+    /* border: 1px solid white; */
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(103, 125, 132);
+}
+
+/* music controller left  */
+
+#music-controller .left{
+    /* border: 1px solid red; */
+    display: flex;
+    flex: 1 1 auto;
+    width: 23%;
+    gap: 1%;   
+}
+
+#music-controller .left>div,
+#music-controller .left>i {
+    margin-top: 10px;
+}
+
+#music-controller .left img{
+    width: 50px;
+    height: 50px;
+}
+
+#music-controller .left div{
+    margin-right: 5%;
+}
+
+#music-controller .left div{
+    font-size: 0.76rem;
+}
+
+
+/* music controller center  */
+
+#music-controller .center{
+    /* border: 1px solid red; */
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    
+}
+
+#music-controller .center .center-top-control{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.control-progress-bar{
+    display: flex;
+    justify-content: center;
+}
+
+.control-progress-bar .progress-bar{
+    width: 60%;
+    height: 1px;
+    background-color: whitesmoke;
+    /* border: 1px solid red; */
+    border-radius: 5%;
+}
+
+
+
+/* .control-progress-bar .progress-bar::before{
+    content: '';
+    width: 10.2%;
+    height: 0;
+    border-radius: 5px;
+    border: 3px solid rgb(247, 9, 9);
+    position: absolute;
+    margin-left: -5px;
+    top: 5.61%;
+} */
+
+.progress-bar-complete{
+    width: 43%;
+    height: 5px;
+    background-color: whitesmoke;
+    z-index: 55;
+    border-radius: 5px;
+    margin-left: -1.5px;
+    margin-top: -0.5px;
+}
+
+.control-progress-bar .progress-bar .progress-bar-complete::after{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: whitesmoke;
+    margin-top: -4.2px;
+    margin-left: 10%;
+}
+
+/* music controller right  */
+
+#music-controller .right{
+    /* border: 1px solid red; */
+    width: 23%;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+    
+}
+
+.control-progress-bar-right {
+    width: 35%;
+    height: 2px;
+    background-color: whitesmoke;
+}
+
+.control-progress-bar-right .progress-bar-complete-right{
+    width: 40%;
+    height: 5px;
+    background-color: whitesmoke;
+    margin-top: -1.5px;
+    border-radius: 5px;
+
+}
+
+.control-progress-bar-right .progress-bar-complete-right::after{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-left: 3.6%;
+    margin-top: -3.4px;
+   
+}
+
+
+
+
+
+/* Miscellaneous */
+
+
+.small-text{
+    font-size: 0.7rem;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.margin-5px {
+    margin: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    
+}
+.text-8rem{
+    font-size: .8rem;
+}
+
+.right-margin{
+    margin-right: 10px;
+}
