@@ -1,25 +1,13 @@
 .div1{
-    background-color: aliceblue;
+    background-color: red;
     width: 200px;
     height: 200px;
 }
 
-.div2{
-    background-color: antiquewhite;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    /* left: 50px; */
-    top: 50px;
-
+.squarish{
+    border-radius: 10px;
 }
 
-.div3{
-    background-color: aquamarine;
-    width: 200px;
-    height: 200px;
-}
-
-.outer-div{
-    position: relative;
+.circle{
+    border-radius: 50%;
 }
